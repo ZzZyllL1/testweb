@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: rgb(238, 237, 237);
+      }
+
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .BaiSe {
+        background-color: white;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .yinying {
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+      }
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: 1px solid #999;
+        font-size: 16px;
+        color: rgb(95, 95, 95);
+      }
+      @media screen and (max-width: 600px) {
+        .cebianlan {
+          display: none;
+        }
+        .youbufen {
+          display: none;
+        }
+        .neirongqu {
+          flex-direction: column;
+        }
+        .shujuqu {
+          flex-direction: column;
+        }
+        .shuju {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+        .neirongqu::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://tool.lu/favicon/" />
+  </head>
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px" class="BaiSe yinying cebianlan">
+      <!-- 头像栏 -->
+      <div
+        style="
+          padding: 2px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <img
+          src="https://dqxy.lnut.edu.cn/__local/5/34/AF/4AFD1F277D9737319E229798101_50B3EF1C_1597D.jpg"
+          width="70px"
+          height="70px"
+          style="padding: 5px"
+          alt=""
+        />
+        <div style="margin-left: 5px; font-size: 16px">众智创新团队</div>
+      </div>
+      <!-- 导航页 -->
+      <div class="daohang">导航</div>
+      <div class="daohang">导航</div>
+      <div class="daohang">导航</div>
+      <div class="daohang">导航</div>
+      <div class="daohang">导航</div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+      <!-- 头部栏 -->
+      <div style="height: 84px" class="BaiSe yinying"></div>
+      <!-- 内容区 -->
+      <div style="overflow: auto" class="flex flex1 neirongqu">
+        <!-- 左部分 -->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 数据区 -->
+          <div class="flex shujuqu">
+            <!-- 数据块 -->
+            <div
+              style="height: 100px"
+              class="shuju flex1 BaiSe mgr8 yinying"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuju flex1 BaiSe mgr8 yinying"
+            ></div>
+            <div
+              style="height: 100px"
+              class="shuju flex1 BaiSe mgr8 yinying"
+            ></div>
+            <div style="height: 100px" class="shuju flex1 BaiSe yinying"></div>
+          </div>
+          <!-- 列表区 -->
+          <div class="flex column">
+            <div style="height: 160px" class="BaiSe mgt8 yinying"></div>
+            <div style="height: 160px" class="BaiSe mgt8 yinying"></div>
+            <div style="height: 160px" class="BaiSe mgt8 yinying"></div>
+            <div style="height: 160px" class="BaiSe mgt8 yinying"></div>
+            <div style="height: 160px" class="BaiSe mgt8 yinying"></div>
+            <div style="height: 160px" class="BaiSe mgt8 yinying"></div>
+            <div style="height: 160px" class="BaiSe mgt8 yinying"></div>
+            <div style="height: 160px" class="BaiSe mgt8 yinying"></div>
+          </div>
+        </div>
+        <!-- 右部分 -->
+        <div style="flex: 1" class="flex column youbufen">
+          <!-- 提示区 -->
+          <div style="height: 150px" class="BaiSe mgt8 yinying"></div>
+          <!-- 消息区 -->
+          <div style="height: 300px" class="BaiSe mgt8 yinying"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
